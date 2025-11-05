@@ -61,7 +61,9 @@ function celsiusAFahrenheit(celsius) {
   // TODO: Implementa la conversiÃ³n
   return 0;
 }
-
+function celsiusAFahrenheit(celsius) {
+  return celsius * 9/5 + 32;
+}
 // ============================================
 // SECCIÃ“N 2: CONDICIONALES (15 puntos)
 // ============================================
