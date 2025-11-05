@@ -31,9 +31,9 @@ function miInformacion() {
 function operacionesBasicas(a, b) {
   // TODO: Calcula suma, resta, multiplicaciÃ³n y divisiÃ³n de a y b
   
-  const suma = 0;
-  const resta = 0;
-  const multiplicacion = 0;
+  const suma = a + b;
+  const resta = a - b;
+  const multiplicacion = a;
   const division = 0;
   
   return { suma, resta, multiplicacion, division };
