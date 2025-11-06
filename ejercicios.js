@@ -59,9 +59,10 @@ function areaRectangulo(base, altura) {
  * @returns {number} - Temperatura en Fahrenheit
  */
 function celsiusAFahrenheit(celsius) {
-  // TODO: Implementa la conversiÃ³n
-  return celsius * 9/5 + 32;
-
+  // TODO: Implementa la conversión
+  const fahrenheit = celsius * (9 / 5 ) + 32;
+  
+  return fahrenheit;
 }
 // ============================================
 // SECCIÃ“N 2: CONDICIONALES (15 puntos)
@@ -75,7 +76,11 @@ function celsiusAFahrenheit(celsius) {
 function parOImpar(numero) {
   // TODO: Usa el operador % (mÃ³dulo) para determinar si es par o impar
   // Pista: Un nÃºmero es par si numero % 2 === 0
-  return "";
+  if (numero % 2 == 0){
+    return "par";
+  } else {
+    return "impar"
+  } 
 }
 
 /**
