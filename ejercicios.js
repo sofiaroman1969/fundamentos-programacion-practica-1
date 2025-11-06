@@ -338,6 +338,9 @@ function sumaMatriz(matriz) {
  */
 function obtenerFila(matriz, indiceFila) {
   // TODO: Retorna la fila indicada
+ if (indiceFila >= 0 && indiceFila < matriz.length) {
+    return matriz[indiceFila];
+  }
   return [];
 }
 
