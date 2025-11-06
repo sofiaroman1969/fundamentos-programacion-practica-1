@@ -151,7 +151,7 @@ function factorial(n) {
   }
   return resultado;
 }
-  
+
 /**
  * Ejercicio 3.2: Suma de nÃºmeros del 1 al n (4 puntos)
  * @param {number} n - NÃºmero lÃ­mite
@@ -159,8 +159,13 @@ function factorial(n) {
  */
 function sumaHastaN(n) {
   // TODO: Usa un bucle para sumar todos los nÃºmeros desde 1 hasta n
-  return 0;
+  let suma = 0;
+  for (let i = 1; i <= n; i++) {
+    suma += i;
+  }
+  return suma;
 }
+
 
 /**
  * Ejercicio 3.3: Tabla de multiplicar (5 puntos)
