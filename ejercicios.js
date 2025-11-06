@@ -90,9 +90,12 @@ function parOImpar(numero) {
  */
 function evaluarNota(nota) {
   // TODO: Implementa la lÃ³gica con if/else
-  return "";
+  if (nota >= 60) {
+    return "Aprobado";
+  } else {
+    return "Reprobado";
+  }
 }
-
 /**
  * Ejercicio 2.3: El mayor de tres nÃºmeros (4 puntos)
  * @param {number} a - Primer nÃºmero
