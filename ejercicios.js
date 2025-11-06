@@ -33,8 +33,8 @@ function operacionesBasicas(a, b) {
   
   const suma = a + b;
   const resta = a - b;
-  const multiplicacion = a;
-  const division = 0;
+  const multiplicacion = a*b;
+  const division = a/b;
   
   return { suma, resta, multiplicacion, division };
 }
@@ -47,7 +47,8 @@ function operacionesBasicas(a, b) {
  */
 function areaRectangulo(base, altura) {
   // TODO: Calcula y retorna el Ã¡rea (base * altura)
-  return 0;
+  const area = base * altura;
+  return area;
 }
 
 /**
@@ -59,10 +60,8 @@ function areaRectangulo(base, altura) {
  */
 function celsiusAFahrenheit(celsius) {
   // TODO: Implementa la conversiÃ³n
-  return 0;
-}
-function celsiusAFahrenheit(celsius) {
   return celsius * 9/5 + 32;
+
 }
 // ============================================
 // SECCIÃ“N 2: CONDICIONALES (15 puntos)
