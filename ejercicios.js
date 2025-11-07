@@ -15,6 +15,7 @@ function miInformacion() {
   // TODO: Declara las variables nombre, edad y carrera
   // Ejemplo: const nombre = "Juan";
   
+  // Reemplaza con tu informacion personal
   const nombre = "Sofia";
   const edad = 19;
   const carrera = "TSU";
@@ -36,6 +37,7 @@ function operacionesBasicas(a, b) {
   const multiplicacion = a*b;
   const division = a/b;
   
+ // Retorna un objeto con los resultados
   return { suma, resta, multiplicacion, division };
 }
 
@@ -47,11 +49,10 @@ function operacionesBasicas(a, b) {
  */
 function areaRectangulo(base, altura) {
   // TODO: Calcula y retorna el Ã¡rea (base * altura)
-function areaRectangulo(base, altura) {
   const area = base * altura;
   return area;
 }
-}
+
 
 /**
  * Ejercicio 1.4: ConversiÃ³n de temperatura (3 puntos)
@@ -63,6 +64,7 @@ function areaRectangulo(base, altura) {
 function celsiusAFahrenheit(celsius) {
   // TODO: Implementa la conversión
 
+// Calcula la temperatura en Fahrenheit
   const fahrenheit = celsius * (9 / 5 ) + 32;
   
   return fahrenheit;
@@ -80,6 +82,8 @@ function parOImpar(numero) {
   // TODO: Usa el operador % (mÃ³dulo) para determinar si es par o impar
   // Pista: Un nÃºmero es par si numero % 2 === 0
   // Retorna "par" o "impar" segÃºn corresponda mediante un if
+  
+  // Evalua si el numero es par o impar
   if (numero % 2 == 0){
     return "par";
   } else {
@@ -94,7 +98,9 @@ function parOImpar(numero) {
  */
 function evaluarNota(nota) {
   // TODO: Implementa la lÃ³gica con if/else
-  if (nota >= 60) {
+  
+    // Evalua si la nota es aprobada o reprobada
+    if (nota >= 60) {
     return "Aprobado";
   } else {
     return "Reprobado";
@@ -109,7 +115,9 @@ function evaluarNota(nota) {
  */
 function mayorDeTres(a, b, c) {
   // TODO: Encuentra y retorna el mayor de los tres nÃºmeros
- let mayor = a;
+ 
+ // Compara los tres numeros para encontrar el mayor
+  let mayor = a;
   if (b > mayor) {
     mayor = b;
   }
@@ -126,7 +134,9 @@ function mayorDeTres(a, b, c) {
  */
 function clasificarEdad(edad) {
   // TODO: Implementa la clasificaciÃ³n con if/else if/else
-  if (edad >= 0 && edad <= 17) {
+ 
+    // Clasifica la edad en menor, adulto o mayor
+    if (edad >= 0 && edad <= 17) {
     return "menor";
   } else if (edad >= 18 && edad <= 64) {
     return "adulto";
@@ -148,6 +158,8 @@ function clasificarEdad(edad) {
  */
 function factorial(n) {
   // TODO: Implementa usando un bucle for
+ 
+  // Calcula el factorial de n
   if (n < 0) return NaN;
   let resultado = 1;
   for (let i = 2; i <= n; i++) {
@@ -163,6 +175,8 @@ function factorial(n) {
  */
 function sumaHastaN(n) {
   // TODO: Usa un bucle para sumar todos los nÃºmeros desde 1 hasta n
+ 
+  // Suma los numeros del 1 al n
   let suma = 0;
   for (let i = 1; i <= n; i++) {
     suma += i;
@@ -179,7 +193,9 @@ function sumaHastaN(n) {
  */
 function tablaMultiplicar(numero) {
   // TODO: Genera un array con la tabla de multiplicar
-   const tabla = [];
+  
+  // Crea la tabla de multiplicar del numero
+  const tabla = [];
   for (let i = 1; i <= 10; i++) {
     tabla.push(numero * i);
   }
@@ -194,6 +210,8 @@ function tablaMultiplicar(numero) {
  */
 function numerosPares(n) {
   // TODO: Crea un array con todos los nÃºmeros pares hasta n
+ 
+ // Genera un array con los numeros pares hasta n
   const pares = [];
   for (let i = 2; i <= n; i += 2) {
     pares.push(i);
@@ -213,7 +231,9 @@ function numerosPares(n) {
  */
 function sumaArray(numeros) {
   // TODO: Suma todos los elementos del array
- let suma = 0;
+
+// Necesitaras un bucle para recorrer el array
+  let suma = 0;
   for (const numero of numeros) { 
     suma += numero;
   }
@@ -226,7 +246,9 @@ function sumaArray(numeros) {
  */
 function promedioArray(numeros) {
   // TODO: Calcula el promedio (suma total / cantidad de elementos)
- if (numeros.length === 0) return 0;
+ 
+ // Reutiliza la funcion suma Array para obtener la suma
+  if (numeros.length === 0) return 0;
   let suma = 0;
   for (const numero of numeros) { 
     suma += numero;
@@ -243,6 +265,8 @@ function promedioArray(numeros) {
 function encontrarMaximo(numeros) {
   // TODO: Encuentra y retorna el nÃºmero mÃ¡s grande
   // Pista: Puedes usar Math.max(...numeros) o hacerlo con un bucle
+ 
+ // Encuentra el numero maximo en el array
   if (numeros.length === 0) return undefined;
   let maximo = numeros[0];
   for (let i = 1; i < numeros.length; i++) {
@@ -264,6 +288,8 @@ function encontrarMaximo(numeros) {
  */
 function filtrarMayores(numeros, limite) {
   // TODO: Crea un nuevo array con solo los nÃºmeros mayores al lÃ­mite
+  
+  // Filtra los numeros mayores al limite
   const mayores = [];
   for (const numero of numeros) {
       if (numero > limite) {
@@ -282,7 +308,9 @@ function filtrarMayores(numeros, limite) {
 function invertirArray(arr) {
   // TODO: Invierte el orden de los elementos
   // Pista: Puedes usar arr.reverse() o hacerlo manualmente
-const invertido = [];
+
+// Invierte el array manualmente
+  const invertido = [];
   for (let i = arr.length - 1; i >= 0; i--) {
       invertido.push(arr[i]);
   }
@@ -304,7 +332,9 @@ const invertido = [];
  */
 function crearMatriz(filas, columnas) {
   // TODO: Crea una matriz de filas x columnas llena de ceros
-   const matriz = [];
+   
+  // Crea la matriz de ceros
+  const matriz = [];
   for (let i = 0; i < filas; i++) {
     const fila = [];
     for (let j = 0; j < columnas; j++) {
@@ -312,7 +342,7 @@ function crearMatriz(filas, columnas) {
     }
     matriz.push(fila);
   }
-  return matriz;
+  return matriz; 
 }
 
 /**
@@ -324,6 +354,8 @@ function crearMatriz(filas, columnas) {
 function sumaMatriz(matriz) {
   // TODO: Suma todos los elementos de la matriz
   // NecesitarÃ¡s dos bucles: uno para las filas y otro para las columnas
+  
+  // Suma todos los elementos de la matriz
   let sumaTotal = 0;
   for (const fila of matriz) { 
     for (const elemento of fila) { 
@@ -341,8 +373,8 @@ function sumaMatriz(matriz) {
  * Ejemplo: obtenerFila([[1, 2], [3, 4], [5, 6]], 1) debe retornar [3, 4]
  */
 function obtenerFila(matriz, indiceFila) {
-  // TODO: Retorna la fila indicada
- if (indiceFila >= 0 && indiceFila < matriz.length) {
+  // Retorna la fila indicada si el índice es válido, sino un array vacío
+  if (indiceFila >= 0 && indiceFila < matriz.length) {
     return matriz[indiceFila];
   }
   return [];
@@ -357,6 +389,8 @@ function obtenerFila(matriz, indiceFila) {
  */
 function obtenerColumna(matriz, indiceColumna) {
   // TODO: Extrae todos los elementos de la columna indicada
+  
+  // Obtiene la columna especificada
   const columna = [];
   for (const fila of matriz) {
     if (indiceColumna >= 0 && indiceColumna < fila.length) {
@@ -364,6 +398,7 @@ function obtenerColumna(matriz, indiceColumna) {
     }
   }
   return columna;
+  //return 0;
 }
 
 /**
@@ -375,7 +410,9 @@ function obtenerColumna(matriz, indiceColumna) {
  */
 function transponer(matriz) {
   // TODO: Crea la matriz transpuesta
- if (matriz.length === 0) return [];
+ 
+ // Transpone la matriz
+  if (matriz.length === 0) return [];
   const numColumnas = matriz[0].length;
   const numFilas = matriz.length;
 
